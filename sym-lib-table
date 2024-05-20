@@ -1,0 +1,12 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Marcano_Connector")(type "KiCad")(uri "${KIPRJMOD}/../marcano-kicad-libraries/Marcano_Connector.kicad_sym")(options "")(descr ""))
+  (lib (name "Marcano_Graphics")(type "KiCad")(uri "${KIPRJMOD}/../marcano-kicad-libraries/Marcano_Graphics.kicad_sym")(options "")(descr ""))
+  (lib (name "Marcano_Harvester")(type "KiCad")(uri "${KIPRJMOD}/../marcano-kicad-libraries/Marcano_Harvester.kicad_sym")(options "")(descr ""))
+  (lib (name "Marcano_MCU")(type "KiCad")(uri "${KIPRJMOD}/../marcano-kicad-libraries/Marcano_MCU.kicad_sym")(options "")(descr ""))
+  (lib (name "Marcano_Memory")(type "KiCad")(uri "${KIPRJMOD}/../marcano-kicad-libraries/Marcano_Memory.kicad_sym")(options "")(descr ""))
+  (lib (name "Marcano_RTC")(type "KiCad")(uri "${KIPRJMOD}/../marcano-kicad-libraries/Marcano_RTC.kicad_sym")(options "")(descr ""))
+  (lib (name "Marcano_Transistor")(type "KiCad")(uri "${KIPRJMOD}/../marcano-kicad-libraries/Marcano_Transistor.kicad_sym")(options "")(descr ""))
+  (lib (name "Marcano_Voltage_Regulator")(type "KiCad")(uri "${KIPRJMOD}/../marcano-kicad-libraries/Marcano_Voltage_Regulator.kicad_sym")(options "")(descr ""))
+  (lib (name "Marcano_Voltage_Supervisor")(type "KiCad")(uri "${KIPRJMOD}/../marcano-kicad-libraries/Marcano_Voltage_Supervisor.kicad_sym")(options "")(descr ""))
+)
