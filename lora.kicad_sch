@@ -4,6 +4,11 @@
 	(generator_version "8.0")
 	(uuid "84198a07-9830-45c2-95fd-57690acfa603")
 	(paper "A4")
+	(title_block
+		(title "Cathodic Protection Sensor Mk1")
+		(date "2024-06-10")
+		(rev "B")
+	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x02_Pin"
 			(pin_names
@@ -1239,8 +1244,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at -10.414 11.684 0)
+			(property "Reference" "U3"
+				(at 2.1941 15.24 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1249,7 +1254,7 @@
 				)
 			)
 			(property "Value" "RFM95W-915S2"
-				(at 1.524 11.43 0)
+				(at 2.1941 12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1257,7 +1262,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "RF_Module:HOPERF_RFM9XW_SMD"
 				(at -83.82 41.91 0)
 				(effects
 					(font
@@ -1535,7 +1540,7 @@
 				(pin bidirectional line
 					(at -12.7 -5.08 0)
 					(length 2.54)
-					(name "RESET"
+					(name "nRESET"
 						(effects
 							(font
 								(size 1.27 1.27)

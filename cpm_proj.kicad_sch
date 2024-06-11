@@ -4,6 +4,11 @@
 	(generator_version "8.0")
 	(uuid "1a24e5ae-1396-454a-91ed-d9dc43ed529e")
 	(paper "A4")
+	(title_block
+		(title "Cathodic Protection Sensor Mk1")
+		(date "2024-06-10")
+		(rev "B")
+	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x01_Socket"
 			(pin_names
@@ -2010,6 +2015,88 @@
 				)
 			)
 		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 		(symbol "Switch:SW_MEC_5E"
 			(pin_names
 				(offset 1.016) hide)
@@ -2685,8 +2772,16 @@
 		(uuid "0127dece-f8fe-4dce-8ebd-ea9cf5bc4805")
 	)
 	(no_connect
+		(at 137.16 116.84)
+		(uuid "1a275dad-24e4-437b-8e7b-c594297effc4")
+	)
+	(no_connect
 		(at 53.34 43.18)
 		(uuid "4f756f04-654e-4916-957c-d7034351510b")
+	)
+	(no_connect
+		(at 137.16 119.38)
+		(uuid "5730f203-4bb9-459a-9e9d-66a4eae83050")
 	)
 	(no_connect
 		(at 87.63 99.06)
@@ -2701,12 +2796,24 @@
 		(uuid "8d44574e-a8d8-451a-b6b2-ecf4e5c4b614")
 	)
 	(no_connect
+		(at 193.04 130.81)
+		(uuid "a4861aab-99c2-423b-a92a-f888578afe4a")
+	)
+	(no_connect
+		(at 137.16 109.22)
+		(uuid "afc4b4ae-c6fe-477d-84c7-b57cb7a783bb")
+	)
+	(no_connect
 		(at 53.34 55.88)
 		(uuid "bc7bcd86-65e6-4f00-bca1-9bc899dd87bd")
 	)
 	(no_connect
 		(at 53.34 45.72)
 		(uuid "e40dedb0-9ffb-4f00-8989-453feaef8947")
+	)
+	(no_connect
+		(at 137.16 111.76)
+		(uuid "f9174a8c-757d-4c4f-91ee-03335913b9d2")
 	)
 	(bus_entry
 		(at 214.63 109.22)
@@ -3767,6 +3874,25 @@
 		)
 		(uuid "f5c3bf33-f04e-4c09-8c68-4fb362634ead")
 	)
+	(text_box "REVISION NOTES:\n\nRev A: first boards ordered\n- Issues, SWDIO/SWDCK swapped on JTAG header\n\nRev B:\n- Fixed SWDIO/SWDCK\n- ADC Caps marked as 0.1uF, changed to 10nF for better time constant\n- Relabelled Lora reset line (is actually active-low)\n- Tweaked labels, added symbols for mounting holes"
+		(exclude_from_sim no)
+		(at 163.83 21.59 0)
+		(size 67.31 38.1)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "4485d09a-744d-40de-99a9-49e7ce1be8a2")
+	)
 	(text_box "NOTE: VDD supplies Artemis and LORA module (through a second TPS22860)"
 		(exclude_from_sim no)
 		(at 240.03 57.15 0)
@@ -4272,6 +4398,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 21.59 176.53 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "19f983ba-1eea-4769-95c2-f178866640ad")
+		(property "Reference" "H4"
+			(at 24.13 175.2599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 24.13 177.7999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.5mm"
+			(at 21.59 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 21.59 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 21.59 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cpm_proj"
+				(path "/1a24e5ae-1396-454a-91ed-d9dc43ed529e"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 119.38 177.8 0)
 		(unit 1)
@@ -4400,6 +4590,70 @@
 			(project "cpm_proj"
 				(path "/1a24e5ae-1396-454a-91ed-d9dc43ed529e"
 					(reference "JP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 21.59 170.18 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "36715d22-579d-4408-bc6d-1c599a986339")
+		(property "Reference" "H3"
+			(at 24.13 168.9099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 24.13 171.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.5mm"
+			(at 21.59 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 21.59 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 21.59 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cpm_proj"
+				(path "/1a24e5ae-1396-454a-91ed-d9dc43ed529e"
+					(reference "H3")
 					(unit 1)
 				)
 			)
@@ -5587,6 +5841,134 @@
 			(project "cpm_proj"
 				(path "/1a24e5ae-1396-454a-91ed-d9dc43ed529e"
 					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 21.59 157.48 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8d83cbfc-c859-456c-852a-5715bcb264ec")
+		(property "Reference" "H1"
+			(at 24.13 156.2099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 24.13 158.7499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.5mm"
+			(at 21.59 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 21.59 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 21.59 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cpm_proj"
+				(path "/1a24e5ae-1396-454a-91ed-d9dc43ed529e"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 21.59 163.83 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9fadfafa-3d73-4961-b98e-0b37335f59df")
+		(property "Reference" "H2"
+			(at 24.13 162.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 24.13 165.0999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.5mm"
+			(at 21.59 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 21.59 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 21.59 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cpm_proj"
+				(path "/1a24e5ae-1396-454a-91ed-d9dc43ed529e"
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -7078,7 +7460,7 @@
 			)
 			(uuid "653bcca9-3fb1-441b-839f-b35d0abd5b6b")
 		)
-		(pin "LORA_RST" input
+		(pin "LORA_nRST" input
 			(at 193.04 124.46 0)
 			(effects
 				(font

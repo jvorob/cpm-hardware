@@ -4,6 +4,11 @@
 	(generator_version "8.0")
 	(uuid "18c2facc-76aa-474d-afef-f1880d0cd494")
 	(paper "A4")
+	(title_block
+		(title "Cathodic Protection Sensor Mk1")
+		(date "2024-06-10")
+		(rev "B")
+	)
 	(lib_symbols
 		(symbol "Battery_Management:ADP5091"
 			(exclude_from_sim no)
